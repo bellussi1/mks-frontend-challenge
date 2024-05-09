@@ -1,0 +1,107 @@
+// _home.scss
+
+.home {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 116px 0;
+
+  .card__container {
+    width: 938px;
+    height: 601px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+    .card {
+      width: 218px;
+      height: 285px;
+      background-color: #fff;
+      box-shadow: 0px 2px 8px 0px #00000022;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        width: 124px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: #2c2c2c;
+      }
+
+      h3 {
+        width: 64px;
+        height: 26px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #373737;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      p {
+        width: 192px;
+        height: 25px;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 300;
+        color: #2c2c2c;
+        margin-bottom: 8px;
+      }
+
+      button {
+        width: 218px;
+        height: 32px;
+        border-radius: 0px 0px 8px 8px;
+        background-color: #0f52ba;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        font-family: inherit;
+        color: #fff;
+        gap: 8px;
+        transition: 0.3s all;
+
+        &:hover {
+          background-color: #0d4496;
+          transition: 0.3s all;
+        }
+      }
+
+      .card__content {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      img {
+        height: 140px;
+        width: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding: 16px 0;
+
+    .card__container {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+}
